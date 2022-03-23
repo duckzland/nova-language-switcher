@@ -1,0 +1,43 @@
+.language-switcher-field {
+    .form-active {
+        align-items: center;
+        gap: 20px;
+
+        .active-lang {
+            align-items: center;
+
+            .flag {
+                margin: 0 0 0 -16px;
+            }
+
+            .text {
+                margin-left: -5px;
+            }
+        }
+    }
+
+    .form-actions {
+        .v-select {
+            min-width: 260px;
+            max-width: 400px;
+            width: 100%;
+
+            .vs__dropdown-toggle {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .options-lang {
+        display: flex;
+        align-items: center;
+
+        .flag {
+            margin: 0 0 0 -20px;
+        }
+
+        .text {
+            margin-left: -2px;
+        }
+    }
+}

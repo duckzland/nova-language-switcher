@@ -1,0 +1,30 @@
+{
+    "name": "duckzland/nova-language-switcher",
+    "description": "Nova Language Switcher",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "spatie/laravel-translatable": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Duckzland\\NovaLanguageSwitcher\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Duckzland\\NovaLanguageSwitcher\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
