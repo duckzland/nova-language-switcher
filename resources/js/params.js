@@ -9,7 +9,6 @@ export default class Params {
 
             this.params[pk] = pv;
         });
-        console.log(this.params);
     }
 
     getParams = (name) => {
