@@ -8,13 +8,14 @@ export default class Params {
             let pv = this.getParams(pk);
 
             this.params[pk] = pv;
-        });;
+        });
+        console.log(this.params);
     }
 
     getParams = (name) => {
         name = name.replace(/[\[\]]/g, '\\$&');
         let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-            url = window.location.href;
+            url = window.location.href,
             results = regex.exec(url);
 
         if (!results) { 

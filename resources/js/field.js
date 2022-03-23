@@ -14,5 +14,7 @@ Nova.booting((Vue, router) => {
     Vue.component('form-language-switcher-nova', FormField);
     Vue.component('country-flag', CountryFlag);
     Vue.component('v-select', vSelect);
+
+
     (new Params()).appendParamsToAxios();
 })
