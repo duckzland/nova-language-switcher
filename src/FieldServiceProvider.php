@@ -17,11 +17,9 @@ class FieldServiceProvider extends ServiceProvider
     {
         Nova::serving(function (ServingNova $event) {
             Nova::provideToScript([
-                'languageSwitcher' => [
-                    'locales' => config('app.locales', [ 'en_US' => 'English']), 
-                    'currentLocale' => config('app.locale', 'en_US'),
-                    'fallbackLocale' => config('app.fallback_locale', 'en_US')
-                ],
+                'locales' => config('app.locales', [ 'en_US' => 'English']), 
+                'locale' => config('app.locale', 'en_US'),
+                'fallback_locale' => config('app.fallback_locale', 'en_US')
             ]);
             Nova::script('language-switcher-nova', __DIR__ . '/../dist/js/field.js');
             Nova::style('language-switcher-nova', __DIR__ . '/../dist/css/field.css');

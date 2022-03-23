@@ -91,7 +91,7 @@
         props: ["resourceName", "field"],
 
         data: () => ({
-            locales: window.config.languageSwitcher.locales || {},
+            locales: window.config.locales || {},
             options: []
         }),
 

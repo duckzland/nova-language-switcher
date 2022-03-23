@@ -1,6 +1,6 @@
 export default class Params {
     refreshParams = () => {
-        let paramToSearch = [  window.config.languageSwitcher.params || 'lang' ];
+        let paramToSearch = [  window.config.ls_params || 'lang' ];
 
         this.params = {};
 

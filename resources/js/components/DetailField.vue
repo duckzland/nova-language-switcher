@@ -71,9 +71,9 @@
 
         data: function () {
             return {
-                current: window.config.languageSwitcher.currentLocale,
-                fallback: window.config.languageSwitcher.fallbackLocale,
-                locales: window.config.languageSwitcher.locales || {},
+                current: window.config.locale,
+                fallback: window.config.fallback_locale,
+                locales: window.config.locales || {},
                 active: {},
                 options: [],
                 isEditing: false,
@@ -98,7 +98,7 @@
                 }
             }
 
-            window.config.languageSwitcher.params = this.field.params || 'lang';
+            window.config.ls_params = this.field.params || 'lang';
 
             this.isEditing = false;
         },

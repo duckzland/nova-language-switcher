@@ -83,7 +83,7 @@ export const global = {
 
         changeLocale(value) {
             if (value.locale) {
-                window.location = this.replaceUrlParam(window.location.href, window.config.languageSwitcher.params, value.locale);
+                window.location = this.replaceUrlParam(window.location.href, window.config.ls_params, value.locale);
             }
         }
     }
